@@ -75,6 +75,7 @@ function App() {
 
   useEffect(() => {
     const checkPlayer = () => {
+      // eslint-disable-next-line
       checkPlayer: {
         if (choiceOne && choiceTwo) {
           setDisabled(true);
@@ -97,6 +98,7 @@ function App() {
               });
             });
             setTimeout(() => resetChoices(), 1000);
+            // eslint-disable-next-line
             break checkPlayer;
           }
 
@@ -106,6 +108,7 @@ function App() {
       }
     };
     checkPlayer();
+    // eslint-disable-next-line
   }, [choiceOne, choiceTwo]);
 
   const handleReload = () => {
