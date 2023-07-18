@@ -112,8 +112,6 @@ function App() {
     window.location.reload();
   };
 
-  console.log(player);
-
   return (
     <div className="App">
       <PlayerForm handleForm={handleForm} />
